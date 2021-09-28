@@ -1,1 +1,1 @@
-# lander-odin-project
+This is a landing page practice from The Odin Project.
