@@ -1,11 +1,9 @@
 html {
-  min-height: 100vh;
   font-family: Ubuntu, sans-serif;
+  overflow-x: hidden;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   margin: 0;
 }
 
@@ -48,7 +46,18 @@ header,
 }
 
 .quote-container {
+  display: flex;
+  justify-content: center;
   background-color: #e5e7eb;
+  width: 100vw;
+}
+
+.quote-box {
+  display: flex;
+  flex-direction: column;
+  max-width: 780px;
+  align-items: flex-end;
+  margin: 50px;
 }
 
 .quote-text {
@@ -56,6 +65,14 @@ header,
   font-weight: lighter;
   font-style: italic;
   color: #1f2937;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+.quote-author {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
 }
 
 header {
@@ -97,6 +114,79 @@ header {
   display: inline-block;
   padding: 8px 38px;
   border-radius: 8px;
-  color: white;
+  color: #f9faf8;
   font-weight: bold;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.info-title {
+  margin: 50px 0;
+}
+
+.content {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.box {
+  border: 3px solid #3882f6;
+  border-radius: 25px;
+  height: 150px;
+  width: 150px;
+}
+
+.box-container {
+  max-width: 155px;
+  margin: 0 30px;
+}
+
+.info-subtext {
+  margin: 5px 0 0 0;
+  text-align: center;
+}
+
+.call-to-action {
+  display: flex;
+  height: 125px;
+  width: 950px;
+  margin: 100px auto;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.cto-text {
+  color: #f9faf8;
+}
+
+.cto-title,
+.cto-subtitle {
+  margin: 3px 0;
+}
+
+.cto-button {
+  color: #f9faf8;
+  padding: 8px 38px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: 3px solid #f9faf8;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: #1f2937;
+  height: 75px;
+}
+
+footer p {
+  color: #f9faf8;
 }
