@@ -17,6 +17,7 @@ header,
 }
 
 .logo {
+  white-space: nowrap;
   font-size: 24px;
   color: #f9faf8;
   font-weight: bold;
@@ -28,7 +29,12 @@ header,
   color: #e5e7eb;
 }
 
+.links {
+  min-width: 200px;
+}
+
 .header-link {
+  display: inline-block;
   margin: 0 15px;
 }
 
@@ -80,10 +86,17 @@ header,
 }
 
 header {
+  position: sticky;
+  top: 0;
+  padding: 10px 10px;
+}
+
+.header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: baseline;
-  padding: 10px 100px 10px 100px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .title {
