@@ -28,6 +28,10 @@ header,
   color: #e5e7eb;
 }
 
+.header-link {
+  margin: 0 15px;
+}
+
 .title {
   font-size: 48px;
   font-weight: bold;
@@ -79,7 +83,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: baseline;
-  padding: 10px 0;
+  padding: 10px 100px 10px 100px;
 }
 
 .title {
